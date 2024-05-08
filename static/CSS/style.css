@@ -189,6 +189,7 @@ main {
 .price p {
     color: #547b6b;
     padding: 2vh;
+    font-size: 20px;
 }
 
 .price button {
@@ -197,6 +198,8 @@ main {
     border: none;
     border-radius: 3px;
     padding: 0 15px 0 15px;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 .price button:hover {
@@ -211,4 +214,69 @@ main h1 {
     padding-top: 1vh;
     text-align: center;
     
+}
+
+
+
+
+
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    background-color: #b2b8b5;
+}
+
+.footer-about {
+   
+    color: #237539;
+    background-color: #b2b8b5;
+    
+}
+
+
+.footer-about {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+footer {
+    line-height: 50px;
+}
+
+.footer-nav a {
+    color: #237539;
+    text-decoration: none;
+    padding: 1vh
+}
+
+.footer-nav a:hover {
+    color: #547b6b;
+    transition: all ease .4s;
+}
+
+.footer-about a {
+    padding-right: 1vh;
+}
+
+.footer-about a {
+    text-decoration: none;
+    color: #237539;
+}
+
+.footer-about a:hover {
+    color: #237539;
+    transition: all ease .4s;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-nav ul {
+        flex-wrap: wrap;
+    }
 }
