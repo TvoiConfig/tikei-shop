@@ -10,31 +10,59 @@ header {
     background-image: url("header-back.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-
-
-
+}
+#header {
+    background-color: #b2b8b5;
 
 }
+nav {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    line-height: 10vh;
+
+}
+
 .logo-body {
     display: flex;
     background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    width: 100%;
+    
     
 }
 
 .logo {
     padding: 10px;
-    height: 100px;
+    height: 10vh;
+    
 }
 .logo-desc {
     padding: 10px;
     color: #547b6b;
+    
 }
 
+nav ul {
+    list-style: none;
+    font-size: 5vh;
+    display: flex;
+}
+
+nav li {
+    padding: 10px;
+    
+}
+nav li a {
+    text-decoration: none;
+    color: #547b6b;
+    text-align: center;
+}
 
 header ul {
     list-style: none;
     font-size: 10vh;
-    padding-bottom: 15vh;
+    padding: 15vh 0 15vh 0;
     
 }
 
@@ -53,10 +81,12 @@ header li a {
     
 
 }
-header li a:hover {
+header li a:hover,
+nav li a:hover {
     color: white;
     transition: all ease .4s;
     background-color: #547b6b;
+    border-radius: 5px;
     
 }
 
@@ -64,6 +94,7 @@ header li a:hover {
     padding: 10px;
     display: flex;
     justify-content: flex-end;
+    position: relative;
     
     
 }
@@ -82,8 +113,42 @@ header li a:hover {
     background-color: #547b6b;
 }
 main {
-    height: 100vh;
+    
     background-color: #b2b8b5;
+}
+
+.hello {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    
+}
+
+.hello h1 {
+    color: #547b6b;
+}
+
+.hello h2 {
+    color: #547b6b;
+}
+
+.hello a {
+    text-decoration: none;
+    background-color: #547b6b;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    border-radius: 3px;
+    font-size: 20px;
+    margin: 10px;
+
+}
+
+.hello a:hover {
+    color: #547b6b;
+    background-color: #c3c9c6;
+    transition: all ease .4s;
 }
 
 
@@ -91,4 +156,59 @@ main {
 
 
 
+.cloth-cards {
+    display: flex;
+    justify-content: center;
+}
 
+.cloth-card {
+    width: 20%;
+    text-align: center;
+    color: #547b6b;
+    background-color: #e0dcdc;
+    border-radius: 7px;
+    margin: 1vh;
+    padding: 1vh;
+}
+
+.cloth-card img {
+    width: 100%;
+}
+
+.cloth-card p {
+    color: black;
+}
+
+.price {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    
+}
+
+.price p {
+    color: #547b6b;
+    padding: 2vh;
+}
+
+.price button {
+    color: #e0dcdc;
+    background-color: #547b6b;
+    border: none;
+    border-radius: 3px;
+    padding: 0 15px 0 15px;
+}
+
+.price button:hover {
+    background-color: #c3c9c6;
+    color: #547b6b;
+    transition: all ease .4s;
+}
+
+
+main h1 {
+    color: #547b6b;
+    padding-top: 1vh;
+    text-align: center;
+    
+}
