@@ -188,9 +188,6 @@ main {
     justify-content: center;
 }
 
-
-
-
 .cloth-card,
 .brand-card {
     width: 20%;
@@ -318,7 +315,7 @@ main h1 {
 }
 
 .social-2 {
-    height: 4vh;
+    height: 7vh;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 7px;
     margin: 8px;
@@ -334,7 +331,8 @@ main h1 {
 }
 
 .points-img {
-    height: 35vh;
+    height: 45vh;
+    width: 20vw;
 }
 
 .about ul {
@@ -346,6 +344,17 @@ main h1 {
     transition: all ease .4s;
 }
 
+@media screen and (max-width: 768px) {
+    .points-img {
+        width: 100%;
+        
+    }
+
+    .designer {
+        width: 80%;
+    }
+    
+}
 
 
 .footer-nav {
