@@ -32,6 +32,18 @@ nav {
     
 }
 
+@media screen and (max-width: 768px) {
+    nav ul {
+        margin-top: 10vh;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    
+}
+
+
 .logo {
     padding: 10px;
     height: 10vh;
@@ -98,6 +110,18 @@ nav li a:hover {
     
     
 }
+
+@media screen and (max-width: 768px) {
+    .social-links {
+        display: none;
+        
+    }
+    .logo-desc {
+        display: none;
+    }
+    
+}
+
 .social {
     height: 7vh;
     background-color: rgba(255, 255, 255, 0.5);
@@ -123,6 +147,7 @@ main {
     flex-direction: column;
     align-items: center;
     height: 50vh;
+    text-align: center;
     
 }
 
@@ -135,6 +160,7 @@ main {
 }
 
 .hello a {
+    
     text-decoration: none;
     background-color: #547b6b;
     color: white;
@@ -156,12 +182,17 @@ main {
 
 
 
-.cloth-cards {
+.cloth-cards,
+.brands-cards {
     display: flex;
     justify-content: center;
 }
 
-.cloth-card {
+
+
+
+.cloth-card,
+.brand-card {
     width: 20%;
     text-align: center;
     color: #547b6b;
@@ -171,11 +202,32 @@ main {
     padding: 1vh;
 }
 
-.cloth-card img {
+
+@media screen and (max-width: 768px) {
+    .cloth-cards,
+    .brands-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cloth-card,
+    .brand-card {
+        width: 90%;
+    }
+}
+
+.brand-card {
+    display: flex;
+    justify-content: center;
+}
+
+.cloth-card img,
+.brand-card img {
     width: 100%;
 }
 
-.cloth-card p {
+.cloth-card p,
+.brand-card p {
     color: black;
 }
 
@@ -218,6 +270,81 @@ main h1 {
 
 
 
+
+
+.about {
+    display: flex;
+    justify-content: center;
+    padding: 1vh;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .about ul {
+        display: none;
+    }
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 1vh;
+    background-color: #e0dcdc;
+    border-radius: 7px;
+}
+
+.designer {
+    margin: 1vh;
+    text-align: center;
+    color: #547b6b;
+    
+}
+
+.nevo-logo {
+    margin: 1vh;
+    
+    
+    
+}
+
+.about img {
+    border-radius: 7px;
+}
+
+.social-2 {
+    height: 4vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 7px;
+    margin: 8px;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.social-2:hover {
+    transform: scale(1.1);
+    transition: all ease .4s;
+    background-color: #547b6b;
+}
+
+.points-img {
+    height: 35vh;
+}
+
+.about ul {
+    list-style: none;
+}
+
+.points-img:hover {
+    transform: scale(1.01);
+    transition: all ease .4s;
+}
 
 
 
